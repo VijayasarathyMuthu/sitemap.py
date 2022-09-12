@@ -1,4 +1,3 @@
-install beautifulsoup4
 
 import requests
 import streamlit as st
