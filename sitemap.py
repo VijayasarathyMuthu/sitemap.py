@@ -17,7 +17,7 @@ with st.spinner(text="Fetching urls..."):
             soup = BeautifulSoup(r.content, 'html.parser')
             links = [item.text for item in soup.select("loc")]
             df_final = []
-            links = links[0:2]
+            #links = links[0:2]
             for link in links:
                     link = link.strip()
                     res = requests.get(link, headers={"User-Agent": "XY"})
