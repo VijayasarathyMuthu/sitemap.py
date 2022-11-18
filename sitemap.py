@@ -17,6 +17,8 @@ def convert_df(sitemap):
         # IMPORTANT: Cache the conversion to prevent computation on every rerun
         return sitemap.to_csv().encode('utf-8')
 
+csv = convert_df(sitemap)
+    
 st.download_button(
      label="Download data as CSV",
      data=csv,
